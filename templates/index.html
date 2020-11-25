@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<table border="1">
+    {% for i in aa %}
+    <tr>
+        <td>{{i.id}}</td>
+        <td><a href="{{url_for('long', id=i.id)}}">{{i.name}}</a></td>
+        <td>{{i.url}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

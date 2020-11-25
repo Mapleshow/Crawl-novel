@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>章节</title>
+</head>
+<body>
+<table border="1">
+    {% for i in bb %}
+    <tr>
+        <td>{{ i.id }}</td>
+        <td><a href="{{url_for('xia',id=i.id)}}">{{ i.name }}</a></td>
+        <td>{{ i.url }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
